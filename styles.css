@@ -1,0 +1,258 @@
+html{
+    height: 100%;
+    background-color: #FC5E55;
+}
+
+body{
+  background-image: url("./image-lion-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin: auto ;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin: 0.5rem;
+}
+
+header{
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(233, 227, 227);
+}
+
+main{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    min-height: 300px;
+padding-top: 50px;
+}
+
+.cards{
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.card1{
+    min-height: 300px;
+    width: 30%;
+    background-image: url("/image-background-card1.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.card2{
+    min-height: 300px;
+    width: 30%;
+    background-image: url("/image-background-card2.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.card3{  
+    min-height: 300px;
+    width: 30%;
+    background-image: url("/image-background-card3.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+.hero{
+    flex: 2;  
+    padding-right: 8rem;
+}
+
+.hero1{
+    flex: 1;    
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.3rem;
+}
+
+p{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+line-height: 2rem;
+}
+
+h2{
+padding-top: 0.8rem;
+font-size: 2rem;
+font-weight: 400;
+font-family: 'Playfair Display', serif; 
+}
+
+.p{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 0.85rem;
+line-height: 1.5rem;
+}
+
+.cards .p {
+padding: 0.8rem;
+
+}
+
+
+.card1, .card2, .card3 {
+    border-radius: 10px;
+    align-content: flex-end;
+    display: grid;
+    box-sizing: border-box;
+}
+
+.fa-solid{
+    font-size:100px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    color: #FC5E55;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #0000033d;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    color: #fff;
+    border: 1px solid #FC5E55;
+background-color: #FC5E55;
+box-shadow: 5px 5px 10px #0000005d;
+transform: scale(1.1);
+transition: all 0.4s;
+}
+
+.hero1 img{
+    border-radius: 10px;
+}
+
+.mybtn{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    color: white;
+    font-weight: bold;
+    background-color:inherit ;
+    /* box-shadow: 5px 5px 10px #0000005d; */
+}
+
+.mybtn:hover{
+    border: 1px solid #FC5E55;
+background-color: #FC5E55;
+box-shadow: 5px 5px 10px #0000005d;
+transform: scale(1.5);
+transition: all 0.3s;
+}
+
+.testomonials{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tbox{
+    text-align: left;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 48%;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+.tbox :last-child{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+
+nav{
+    display:flex;
+ }
+
+
+ .navbutton{
+   display:grid;
+   justify-content:center;
+  margin:0 0.5rem;
+   background-color:inherit;
+   padding: 1rem;
+   width:100px;
+   text-align:center;
+   position:relative;
+   border-radius:5px;
+   border: 1px solid white;
+   z-index: 1;
+ }
+ 
+ 
+ .dropdown {
+     position: absolute;
+     margin-top: 3rem;
+     z-index: -1;
+     visibility: hidden;
+     transform: scale(0);
+     transition: all 0.3s;
+ }
+ 
+ .dropdown .navbutton{
+   margin:0.5rem 0;
+   background-color:#70f324;
+   color:black;
+ }
+ 
+ .navbutton:hover{
+     cursor:pointer;
+   background-color:#7DCE13;
+   transition: all 0.5s;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ 
+ 
+ 
+ .navbutton:hover .dropdown{
+    visibility: visible;
+   cursor:pointer;
+    transform: scale(1);
+     transition: all 0.5s;
+ }
+ 
+ 
