@@ -77,9 +77,13 @@
 <div class="main">
     <h1>Contact us</h1>
     <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
-    <form action="mail.php">
-        <input type="text" name="name" id="name">
-        <input type="email" name="email" id="email">
+    <form action="mail.php" method="post">
+
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" placeholder="name">
+
+        
+        <input type="email" name="email" id="email" placeholder="example123@gmail.com">
         <input type="submit" value="Fire Away">
     </form>
 </div>
